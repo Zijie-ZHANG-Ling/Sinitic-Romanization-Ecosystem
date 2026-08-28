@@ -1,8 +1,6 @@
 # Sinitic-Romanization-Ecosystem
 
-Supplementary materials, data, and tools for an anonymized research submission on cross-lingual Sinitic romanization.
-
-As shown by the repository timestamps and commit history, most of the code and language resources described in the paper were uploaded before the submission deadline on June 21, 2026 (AoE). Some resources and documentation were further completed and improved after the deadline, including the MandRomZJ1 homophone-character table, the corresponding PhonConvert edit-state JSON, the experimental audio-file lists, and some detailed READMEs. The repository state before the deadline can be inspected through the commit history.
+Supplementary materials, data, and tools for ISCSLP2026 ***Toward a Cross-Lingual Romanization Ecosystem for Sinitic Languages: A Paired Mandarin–Cantonese Case Study***.
 
 For the sampled data used for the MMS fine-tuning experiment, please refer to `sampled_file_names`.
 
