@@ -49,8 +49,8 @@ The ecosystem proposes a general framework for cross-lingual romanization design
 
 對於聲調語言，本生態系統另提出**調值－調類雙軌設計（dual-track tone representation）**。其中：
 
-- **調值（tone value）**使用趙元任五度標記法（Chao five-level tone system）表示實際音高；
-- **調類（tone category）**則使用本工作提出的 **Hierarchical Tone-Category Notation (HTCN)**，以階層式符號編碼聲調的歷史來源及分化關係。
+- **調值**使用趙元任五度標記法（Chao five-level tone system）表示實際音高；
+- **調類**則使用本工作提出的 **Hierarchical Tone-Category Notation (HTCN)**，以階層式符號編碼聲調的歷史來源及分化關係。
 
 具體設計理念、不同原則之間的取捨及實例，請參閱論文。
 
