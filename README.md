@@ -1,14 +1,14 @@
-# Sinitic Romanization Ecosystem
 # 漢語族語言（漢語方言）羅馬字生態系統
+# Sinitic Romanization Ecosystem
 
-## Overview
 ## 概述
+## Overview
 
 「**Sinitic Romanization Ecosystem 漢語族語言（漢語方言）羅馬字生態系統**」是隨 ISCSLP 2026 論文 *Toward a Cross-Lingual Romanization Ecosystem for Sinitic Languages: A Paired Mandarin–Cantonese Case Study* 一同推出的核心開源生態系統。
 
 **Sinitic Romanization Ecosystem** is the core open-source ecosystem introduced alongside the ISCSLP 2026 paper *Toward a Cross-Lingual Romanization Ecosystem for Sinitic Languages: A Paired Mandarin–Cantonese Case Study*.
 
-本生態系統最初以漢語族語言（漢語方言）的跨語言羅馬字設計、數據與工具為核心，但其架構並不限於漢語族。其設計理念、數據格式與基礎設施可進一步擴展至漢字文化圈以及大陸東南亞語言聯盟（Mainland Southeast Asia, MSEA）中的其他語言，例如 Sinitic（漢語族）、Vietic（越芒語支）、Koreanic（韓語／朝鮮語）、Tai（台語支）等。從這一更廣泛的發展方向而言，本項目亦可被稱為「**Sinosphere–MSEA Romanization Ecosystem 漢字文化圈－大陸東南亞語言聯盟羅馬字生態系統**」。
+本生態系統最初以漢語族語言（漢語方言）的跨語言羅馬字設計、數據與工具為核心，但其架構並不限於漢語族。其設計理念、數據格式與基礎設施可進一步擴展至漢字文化圈以及大陸東南亞語言聯盟（Mainland Southeast Asia, MSEA）中的其他語言，例如 Sinitic（漢語）、Vietic（越芒語）、Koreanic（韓語／朝鮮語）、Tai（台語）等。從這一更廣泛的發展方向而言，本項目亦可被稱為「**Sinosphere–MSEA Romanization Ecosystem 漢字文化圈－大陸東南亞語言聯盟羅馬字生態系統**」。
 
 The ecosystem was initially developed around cross-lingual romanization design, data, and tools for Sinitic languages, but its architecture is not restricted to Sinitic. Its design methodology, data formats, and infrastructure can be extended to other languages across the **Sinosphere** and the **Mainland Southeast Asia (MSEA) linguistic area**, including, for example, Sinitic, Vietic, Koreanic, and Tai languages. In this broader sense, the project may also be referred to as the **Sinosphere–MSEA Romanization Ecosystem**.
 
@@ -23,16 +23,15 @@ Detailed specifications for the **design, entry, structured storage, file format
 
 ---
 
-## Components of the Ecosystem
 ## 生態系統的主要組成
+## Components of the Ecosystem
 
 本生態系統目前主要由以下四個部分組成：
 
 The ecosystem currently consists of four major components:
 
-
-### 1. Romanization Design Principles
 ### 1. 羅馬字設計原則
+### 1. Romanization Design Principles
 
 本生態系統提出一套面向跨語言羅馬字設計的基本框架，包括以下四項主要原則：
 
@@ -63,8 +62,8 @@ For tonal languages, the ecosystem additionally introduces a **dual-track tone r
 For detailed motivations, trade-offs among the design principles, and concrete examples, please refer to the accompanying paper.
 
 
-### 2. Romanization Schemes
 ### 2. 具體語言／方言羅馬字方案
+### 2. Romanization Schemes
 
 基於上述設計原則，本生態系統已經包含多套具體的語言／方言羅馬字方案。
 
@@ -103,8 +102,8 @@ MandRomZJ1 與 CantRomZJ1 的詳細設計論述已收錄於論文。梅縣客家
 Detailed descriptions of MandRomZJ1 and CantRomZJ1 are available in the paper. Documentation of the Meixian Hakka, Nanjing, and Shanghai schemes will be progressively added to this repository.
 
 
-### 3. PhonEngine
 ### 3. PhonEngine：核心數據與工具基礎設施
+### 3. PhonEngine: Core Data and Tooling Infrastructure
 
 **PhonEngine 是本生態系統最核心的基礎設施之一。**
 
@@ -165,8 +164,8 @@ Its major functions include:
 Together, **PhonSymbol + PhonConvert** define the standard workflow through which romanization schemes and their associated pronunciation data are created, stored, exchanged, reproduced, and extended within the ecosystem.
 
 
-### 4. Additional Infrastructure and Interoperability
 ### 4. 其他基礎設施與生態兼容
+### 4. Additional Infrastructure and Interoperability
 
 除 PhonEngine 外，本 repository 還提供一系列用於實際部署及與既有語言技術生態互操作的工具與數據。
 
@@ -191,8 +190,8 @@ These currently include:
 
 ---
 
-## An Open and Extensible Ecosystem
 ## 一個開放且可持續擴展的生態系統
+## An Open and Extensible Ecosystem
 
 本 repository 並不僅僅用於保存論文中已經完成的幾套羅馬字方案，而是希望成為一個可以持續發展的開放生態系統。
 
