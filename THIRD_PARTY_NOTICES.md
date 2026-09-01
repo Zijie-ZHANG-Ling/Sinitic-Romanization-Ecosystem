@@ -423,8 +423,7 @@ Generated YAML data remain subject to the licensing layers applicable to the inp
 | AISHELL-3                                  | Experimental speech dataset                         | No; filenames only                                                                                          |
 | MDCC                                       | Experimental speech dataset                         | No; filenames only                                                                                          |
 | Rime                                       | Output interoperability target                      | No                                                                                                          |
-                                                                           |
-
+                                                                        
 ---
 
 ## 11. Updates and Additional Third-Party Resources
