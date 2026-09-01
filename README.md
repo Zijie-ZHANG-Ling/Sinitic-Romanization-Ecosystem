@@ -1,5 +1,5 @@
-# 漢語族語言（漢語方言）羅馬字生態系統<br>漢字文化圈－大陸東南亞語言聯盟羅馬字生態系統
-# Sinitic Romanization Ecosystem<br>Sinosphere–MSEA Romanization Ecosystem
+# ☯️ 漢語族語言（漢語方言）羅馬字生態系統<br>🌏 漢字文化圈－大陸東南亞語言聯盟羅馬字生態系統 🥢
+# 🔤 Sinitic Romanization Ecosystem<br>🔠 Sinosphere–MSEA Romanization Ecosystem 🔡
 
 ## 概述
 ## Overview
@@ -62,8 +62,8 @@ For tonal languages, the ecosystem additionally introduces a **dual-track tone r
 For detailed motivations, trade-offs among the design principles, and concrete examples, please refer to the accompanying paper.
 
 
-### 2. 具體語言／方言羅馬字方案
-### 2. Romanization Schemes
+### 2. 具體語言／方言羅馬字方案 🪭
+### 2. Romanization Schemes 🖌️
 
 基於上述設計原則，本生態系統已經包含多套具體的語言／方言羅馬字方案。
 
@@ -102,8 +102,8 @@ MandRomZJ1 與 CantRomZJ1 的詳細設計論述已收錄於論文。梅縣客家
 Detailed descriptions of MandRomZJ1 and CantRomZJ1 are available in the paper. Documentation of the Meixian Hakka, Nanjing, and Shanghai schemes will be progressively added to this repository.
 
 
-### 3. PhonEngine：核心數據與工具基礎設施
-### 3. PhonEngine: Core Data and Tooling Infrastructure
+### 3. PhonEngine：核心數據與工具基礎設施 🎋
+### 3. PhonEngine: Core Data and Tooling Infrastructure 📜
 
 **PhonEngine 是本生態系統最核心的基礎設施之一。**
 
