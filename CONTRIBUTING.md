@@ -47,3 +47,102 @@ Within each cell:
 
 This design does not require PhonSymbol users to adopt a single type of linguistic representation. Depending on the language, variety, and design principles of a particular romanization scheme, each mapping unit may represent a phoneme, a phone, or a grapheme, which is then mapped to the corresponding romanization symbol.
 
+
+
+### PhonSymbol 整體介面與兩種錄入模式
+
+### PhonSymbol Interface and Two Entry Modes
+
+PhonSymbol 的整體介面如下圖所示。介面提供兩種羅馬字方案錄入模式，可通過頁面頂部的 **「頭腹尾 M-N-C / 韻母 Final」**切換按鈕進行選擇。
+
+![PhonSymbol M-N-C mode](./assets/phonsymbol_mnc_mode.png)
+
+![PhonSymbol Final mode](./assets/phonsymbol_final_mode.png)
+
+The overall PhonSymbol interface is shown below. Two romanization-entry modes are provided and can be selected using the **“M-N-C / Final”** mode switch located at the top of the interface.
+
+![PhonSymbol M-N-C mode](./assets/phonsymbol_mnc_mode.png)
+
+![PhonSymbol Final mode](./assets/phonsymbol_final_mode.png)
+
+---
+
+#### 「頭腹尾 M-N-C」模式
+
+#### M-N-C Mode
+
+在**「頭腹尾 M-N-C」模式**下，羅馬字錄入部分由六個相互獨立的區域（area；亦即論文中所稱的 unit 或 editable grid）組成：
+
+1. **聲母 / Initial (`sheng_mu`)**
+2. **韻頭 / Medial (`yun_tou`)**
+3. **韻腹 / Nucleus (`yun_fu`)**
+4. **韻尾 / Coda (`yun_wei`)**
+5. **成音節鼻音 / Syllabic Nasal (`cheng_yin_jie_bi_yin`)**
+6. **聲調 / Tone (`sheng_diao`)**
+
+其中，聲母（Initial）、韻頭（Medial）、韻腹（Nucleus）與韻尾（Coda）可以分別錄入相應語言或方言中各音系單位與其羅馬字符號之間的 mapping；成音節鼻音（Syllabic Nasal）區域用於記錄可獨立構成音節的鼻音及其羅馬字表示；聲調（Tone）區域則用於記錄聲調與相應羅馬字聲調符號或標記之間的 mapping。
+
+每一個 area 均由一個或多個 cell 組成。使用者可以通過區域下方的 **「+ 添加一格 / Add cell」**按鈕增加新的 cell。
+
+當鼠標光標移至某一 cell 上方時，該 cell 的右上角會顯示 **❌** 按鈕，點擊即可刪除該 cell。為確保每個 area 始終保持可編輯狀態，**每個 area 至少保留一個 cell**；當某一 area 中僅剩一個 cell 時，該 cell 不可再被刪除。
+
+在每個 cell 中，使用者按照前述格式，在 **`symbol / 符號`**欄填入 romanization symbol，並在 **`note / 備注`**欄填入其所對應的 phoneme、或 phone、或 grapheme，以及其他需要保存的備注信息。
+
+In **M-N-C mode**, the romanization-entry interface consists of six independent areas (i.e., the units or editable grids referred to in the paper):
+
+1. **Initial (`sheng_mu`)**
+2. **Medial (`yun_tou`)**
+3. **Nucleus (`yun_fu`)**
+4. **Coda (`yun_wei`)**
+5. **Syllabic Nasal (`cheng_yin_jie_bi_yin`)**
+6. **Tone (`sheng_diao`)**
+
+The Initial, Medial, Nucleus, and Coda areas allow users to separately record mappings between the corresponding phonological units of a language or variety and their romanization symbols. The Syllabic Nasal area is used for nasal segments that can independently constitute a syllable and their corresponding romanized representations. The Tone area records mappings between tones and their corresponding romanization symbols or tone markers.
+
+Each area contains one or more cells. Additional cells can be created using the **“+ Add cell”** button located below the corresponding area.
+
+When the pointer is placed over a cell, a **❌** button appears in the upper-right corner of that cell and can be used to remove it. To ensure that every area remains editable, **each area must contain at least one cell**. When only one cell remains in an area, that cell cannot be deleted.
+
+Within each cell, users enter the romanization symbol in the **`symbol / 符號`** field and enter the corresponding phoneme, or phone, or grapheme, together with any additional annotations, in the **`note / 備注`** field.
+
+---
+
+#### 「韻母 Final」模式
+
+#### Final Mode
+
+在**「韻母 Final」模式**下，PhonSymbol 不再將韻母內部進一步拆分為韻頭（Medial）、韻腹（Nucleus）及韻尾（Coda），而是將其作為一個完整的**韻母（Final）**單位進行錄入。
+
+因此，該模式的羅馬字錄入部分由四個相互獨立的 area 組成：
+
+1. **聲母 / Initial (`sheng_mu`)**
+2. **韻母 / Final (`yun_mu`)**
+3. **成音節鼻音 / Syllabic Nasal (`cheng_yin_jie_bi_yin`)**
+4. **聲調 / Tone (`sheng_diao`)**
+
+其中，聲母（Initial）區域用於錄入聲母與 romanization symbol 的 mapping；韻母（Final）區域則直接以完整韻母作為 mapping unit，而不要求使用者將其拆分為 Medial、Nucleus 與 Coda。成音節鼻音（Syllabic Nasal）及聲調（Tone）區域的功能與「頭腹尾 M-N-C」模式相同。
+
+這一模式適合以完整韻母為主要分析或表示單位的語言、方言或羅馬字方案，使使用者可以根據具體方案的音系結構選擇較合適的錄入方式，而無需強制採用 M-N-C 的內部拆分。
+
+與「頭腹尾 M-N-C」模式相同，每個 area 均可通過 **「+ 添加一格 / Add cell」**增加新的 cell；將鼠標光標置於某一 cell 上方時，可使用右上角顯示的 **❌** 按鈕刪除該 cell。每個 area 同樣至少保留一個 cell，因此當區域內僅剩一個 cell 時，該 cell 不可被刪除。
+
+每個 cell 的填寫方式亦完全相同：在 **`symbol / 符號`**欄填入 romanization symbol，在 **`note / 備注`**欄填入其所對應的 phoneme、或 phone、或 grapheme，以及其他所需的備注信息。
+
+In **Final mode**, PhonSymbol does not further divide the final into separate Medial, Nucleus, and Coda components. Instead, the **Final** is treated as a complete mapping unit.
+
+Accordingly, the romanization-entry interface in this mode consists of four independent areas:
+
+1. **Initial (`sheng_mu`)**
+2. **Final (`yun_mu`)**
+3. **Syllabic Nasal (`cheng_yin_jie_bi_yin`)**
+4. **Tone (`sheng_diao`)**
+
+The Initial area is used to record mappings between initials and romanization symbols. The Final area treats an entire final as a single mapping unit and does not require it to be decomposed into Medial, Nucleus, and Coda components. The Syllabic Nasal and Tone areas function in the same way as their counterparts in M-N-C mode.
+
+This mode is suitable for languages, varieties, or romanization schemes in which the complete final serves as the preferred unit of analysis or representation. It therefore allows users to select a representation structure appropriate to the phonological organization of a particular scheme without requiring an M-N-C decomposition.
+
+As in M-N-C mode, additional cells can be created within each area using the **“+ Add cell”** button. When the pointer is placed over a cell, a **❌** button appears in its upper-right corner and can be used to remove the cell. Each area must retain at least one cell, so the final remaining cell in an area cannot be deleted.
+
+Cell contents are entered in exactly the same way as in M-N-C mode: the **`symbol / 符號`** field contains the romanization symbol, while the **`note / 備注`** field contains the corresponding phoneme, or phone, or grapheme, together with any other required annotations.
+
+
