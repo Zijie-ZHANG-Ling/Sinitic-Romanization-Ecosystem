@@ -2,7 +2,7 @@
 
 # Contributing
 
-本生態系統高度歡迎社區成員為**漢字文化圈（Sinosphere）及大陸東南亞語言聯盟（Mainland Southeast Asia linguistic area）**中的各類語言與語言變體，以及更廣泛的其他語言，設計、整理並貢獻羅馬字方案（romanization schemes）及相關字音資源。我們希望通過統一、開放且可擴展的數據與工具基礎設施，使不同語言、方言及不同設計思路下的羅馬字方案能夠以一致的方式被記錄、共享、比較、擴展及重新使用。
+本生態系統高度歡迎社區成員為 **漢字文化圈（Sinosphere）及大陸東南亞語言聯盟（Mainland Southeast Asia linguistic area）** 中的各類語言與語言變體，以及更廣泛的其他語言，設計、整理並貢獻羅馬字方案（romanization schemes）及相關字音資源。我們希望通過統一、開放且可擴展的數據與工具基礎設施，使不同語言、方言及不同設計思路下的羅馬字方案能夠以一致的方式被記錄、共享、比較、擴展及重新使用。
 
 We warmly welcome community members to design, organize, and contribute **romanization schemes** and related pronunciation resources for languages and language varieties across the **Sinosphere** and the **Mainland Southeast Asia linguistic area**, as well as for languages beyond these regions. Through a unified, open, and extensible data and tooling infrastructure, we aim to enable romanization schemes developed for different languages, varieties, and design traditions to be recorded, shared, compared, extended, and reused in a consistent manner.
 
