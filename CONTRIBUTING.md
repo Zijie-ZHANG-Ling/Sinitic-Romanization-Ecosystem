@@ -22,7 +22,6 @@ The scheme file should contain the complete mapping relationships and associated
 
 ---
 
-
 ## PhonSymbol
 
 ### 基本錄入單元：Cell 與 symbol / note 欄位<br>Basic Entry Unit: Cells and the symbol / note Fields
@@ -62,11 +61,10 @@ The overall PhonSymbol interface is shown below. Two romanization-entry modes ar
 | <img src="./assets/phonsymbol_mnc_mode.png" alt="PhonSymbol M-N-C mode"> | <img src="./assets/phonsymbol_final_mode.png" alt="PhonSymbol Final mode"> |
 
 
-#### 「頭腹尾 M-N-C」模式
 
-#### M-N-C Mode
+#### 「頭腹尾 M-N-C」模式<br>M-N-C Mode
 
-在**「頭腹尾 M-N-C」模式**下，羅馬字錄入部分由六個相互獨立的區域（area；亦即論文中所稱的 unit 或 editable grid）組成：
+在 **「頭腹尾 M-N-C」模式**下，羅馬字錄入部分由六個相互獨立的區域（area；亦即論文中所稱的 unit 或 editable grid）組成：
 
 1. **聲母 / Initial (`sheng_mu`)**
 2. **韻頭 / Medial (`yun_tou`)**
@@ -100,13 +98,10 @@ When the pointer is placed over a cell, a **❌** button appears in the upper-ri
 
 Within each cell, users enter the romanization symbol in the **`symbol / 符號`** field and enter the corresponding phoneme, or phone, or grapheme, together with any additional annotations, in the **`note / 備注`** field.
 
----
 
-#### 「韻母 Final」模式
+#### 「韻母 Final」模式<br>Final Mode
 
-#### Final Mode
-
-在**「韻母 Final」模式**下，PhonSymbol 不再將韻母內部進一步拆分為韻頭（Medial）、韻腹（Nucleus）及韻尾（Coda），而是將其作為一個完整的**韻母（Final）**單位進行錄入。
+在 **「韻母 Final」模式**下，PhonSymbol 不再將韻母內部進一步拆分為韻頭（Medial）、韻腹（Nucleus）及韻尾（Coda），而是將其作為一個完整的**韻母（Final）**單位進行錄入。
 
 因此，該模式的羅馬字錄入部分由四個相互獨立的 area 組成：
 
@@ -140,7 +135,7 @@ As in M-N-C mode, additional cells can be created within each area using the **�
 
 Cell contents are entered in exactly the same way as in M-N-C mode: the **`symbol / 符號`** field contains the romanization symbol, while the **`note / 備注`** field contains the corresponding phoneme, or phone, or grapheme, together with any other required annotations.
 
-
+---
 
 ### JSON 數據
 ### JSON Data
@@ -157,8 +152,6 @@ The PhonSymbol interface, including both **M-N-C mode** and **Final mode**, prov
 Whenever users add, modify, or remove cells in any area, the JSON preview is updated simultaneously to reflect the current complete data structure of the scheme.
 
 ![JSON Preview](./assets/json_preview.png)
-
----
 
 PhonSymbol 使用 JSON（JavaScript Object Notation）作為羅馬字方案的標準化存儲格式。JSON 是一種輕量級、易於人類閱讀，同時方便機器解析的結構化數據格式。
 
