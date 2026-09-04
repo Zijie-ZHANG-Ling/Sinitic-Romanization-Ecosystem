@@ -60,8 +60,7 @@ The overall PhonSymbol interface is shown below. Two romanization-entry modes ar
 |:---:|:---:|
 | <img src="./assets/phonsymbol_mnc_mode.png" alt="PhonSymbol M-N-C mode"> | <img src="./assets/phonsymbol_final_mode.png" alt="PhonSymbol Final mode"> |
 
-
-
+---
 
 #### 「頭腹尾 M-N-C」模式<br>M-N-C Mode
 
