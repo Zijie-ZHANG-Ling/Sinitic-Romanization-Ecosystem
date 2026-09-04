@@ -77,7 +77,7 @@ The overall PhonSymbol interface is shown below. Two romanization-entry modes ar
 
 每一個 area 均由一個或多個 cell 組成。使用者可以通過區域下方的 **「+ 添加一格 / Add cell」**按鈕增加新的 cell。
 
-當鼠標光標移至某一 cell 上方時，該 cell 的右上角會顯示 **❌** 按鈕，點擊即可刪除該 cell。為確保每個 area 始終保持可編輯狀態，**每個 area 至少保留一個 cell**；當某一 area 中僅剩一個 cell 時，該 cell 不可再被刪除。
+當鼠標光標移至某一 cell 上方時，該 cell 的右上角會顯示 ❌ 按鈕，點擊即可刪除該 cell。為確保每個 area 始終保持可編輯狀態，**每個 area 至少保留一個 cell**；當某一 area 中僅剩一個 cell 時，該 cell 不可再被刪除。
 
 在每個 cell 中，使用者按照前述格式，在 **`symbol / 符號`**欄填入 romanization symbol，並在 **`note / 備注`**欄填入其所對應的 phoneme、或 phone、或 grapheme，以及其他需要保存的備注信息。
 
@@ -94,7 +94,7 @@ The Initial, Medial, Nucleus, and Coda areas allow users to separately record ma
 
 Each area contains one or more cells. Additional cells can be created using the **“+ Add cell”** button located below the corresponding area.
 
-When the pointer is placed over a cell, a **❌** button appears in the upper-right corner of that cell and can be used to remove it. To ensure that every area remains editable, **each area must contain at least one cell**. When only one cell remains in an area, that cell cannot be deleted.
+When the pointer is placed over a cell, a ❌ button appears in the upper-right corner of that cell and can be used to remove it. To ensure that every area remains editable, **each area must contain at least one cell**. When only one cell remains in an area, that cell cannot be deleted.
 
 Within each cell, users enter the romanization symbol in the **`symbol / 符號`** field and enter the corresponding phoneme, or phone, or grapheme, together with any additional annotations, in the **`note / 備注`** field.
 
@@ -114,7 +114,7 @@ Within each cell, users enter the romanization symbol in the **`symbol / 符號`
 
 這一模式適合以完整韻母為主要分析或表示單位的語言、方言或羅馬字方案，使使用者可以根據具體方案的音系結構選擇較合適的錄入方式，而無需強制採用 M-N-C 的內部拆分。
 
-與「頭腹尾 M-N-C」模式相同，每個 area 均可通過 **「+ 添加一格 / Add cell」**增加新的 cell；將鼠標光標置於某一 cell 上方時，可使用右上角顯示的 **❌** 按鈕刪除該 cell。每個 area 同樣至少保留一個 cell，因此當區域內僅剩一個 cell 時，該 cell 不可被刪除。
+與「頭腹尾 M-N-C」模式相同，每個 area 均可通過 **「+ 添加一格 / Add cell」** 增加新的 cell；將鼠標光標置於某一 cell 上方時，可使用右上角顯示的 ❌ 按鈕刪除該 cell。每個 area 同樣至少保留一個 cell，因此當區域內僅剩一個 cell 時，該 cell 不可被刪除。
 
 每個 cell 的填寫方式亦完全相同：在 **`symbol / 符號`**欄填入 romanization symbol，在 **`note / 備注`**欄填入其所對應的 phoneme、或 phone、或 grapheme，以及其他所需的備注信息。
 
@@ -131,7 +131,7 @@ The Initial area is used to record mappings between initials and romanization sy
 
 This mode is suitable for languages, varieties, or romanization schemes in which the complete final serves as the preferred unit of analysis or representation. It therefore allows users to select a representation structure appropriate to the phonological organization of a particular scheme without requiring an M-N-C decomposition.
 
-As in M-N-C mode, additional cells can be created within each area using the **“+ Add cell”** button. When the pointer is placed over a cell, a **❌** button appears in its upper-right corner and can be used to remove the cell. Each area must retain at least one cell, so the final remaining cell in an area cannot be deleted.
+As in M-N-C mode, additional cells can be created within each area using the **“+ Add cell”** button. When the pointer is placed over a cell, a ❌ button appears in its upper-right corner and can be used to remove the cell. Each area must retain at least one cell, so the final remaining cell in an area cannot be deleted.
 
 Cell contents are entered in exactly the same way as in M-N-C mode: the **`symbol / 符號`** field contains the romanization symbol, while the **`note / 備注`** field contains the corresponding phoneme, or phone, or grapheme, together with any other required annotations.
 
