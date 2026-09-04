@@ -338,3 +338,37 @@ The **"富文本编辑 / Rich Text Editor"** area on the first page is where raw
 - In **"字音表 / Pronunciation Table" mode**, the data should contain one entry per line in the form `汉字,声母,韵母,声调` (the commas must be half-width ASCII commas `,`), for example `間,tɕ,iæn,陰平55`, and so on for the following lines.
 
 In "字音表 / Pronunciation Table" mode data, **the initial field may be left empty** (indicating a zero initial), while **the character, final, and tone fields are required**; lines that do not meet these requirements will be skipped during extraction.
+
+---
+
+### 使用古音小镜（Kaom.net）數據的操作步驟<br>Steps for Using Data from Guyin Xiaojing (Kaom.net)
+
+**步驟 1：打開索引頁並選擇語言地點 / Step 1: Open the index page and select a language location**
+
+打開古音小镜 Kaom.net 的漢語族語言字音索引頁（http://www.kaom.net/si_x.php），並選擇一個目標語言地點。
+
+Open the Kaom.net Sinitic-language pronunciation index at http://www.kaom.net/si_x.php and select a target language location.
+
+索引頁如下圖所示 / The index page is shown below:
+
+<img src="./assets/kaom_listinglocs.png" width="720" alt="Kaom.net index page listing Sinitic-language locations">
+
+**步驟 2：打開音系頁面與全字表 / Step 2: Open the phonology page and the full character table**
+
+在所選語言地點的條目中點擊 **「音系」** 按鈕，打開該地點的音系頁面；再在音系頁面中點擊 **「全字表」**，打開字級字音表。
+
+For the selected location, click the **"音系"** (phonology) button to open its phonology page; from the phonology page, click **"全字表"** (full character table) to open the character-level pronunciation table.
+
+音系頁面如下圖所示 / The phonology page is shown below:
+
+<img src="./assets/kaom_phonpage.png" width="720" alt="Kaom.net phonology page for a selected location">
+
+全字表頁面如下圖所示 / The full character table page is shown below:
+
+<img src="./assets/kaom_fullcharpage.png" width="720" alt="Kaom.net full character-pronunciation table">
+
+**步驟 3：複製全字表內容並粘貼至 PhonConvert / Step 3: Copy the full character table and paste it into PhonConvert**
+
+在全字表頁面中全選頁面內容（Windows / Linux 按 **Ctrl+A**,macOS 按 **Command+A**)，複製後粘貼到 PhonConvert the first page 的 **「富文本编辑 / Rich Text Editor」** 中。
+
+On the full character-pronunciation table page, select all page content (**Ctrl+A** on Windows / Linux or **Command+A** on macOS), copy it, and paste it into the **"富文本编辑 / Rich Text Editor"** on the first page of PhonConvert.
