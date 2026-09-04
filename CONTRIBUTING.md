@@ -75,7 +75,7 @@ The overall PhonSymbol interface is shown below. Two romanization-entry modes ar
 
 其中，聲母（Initial）、韻頭（Medial）、韻腹（Nucleus）與韻尾（Coda）可以分別錄入相應語言或方言中各音系單位與其羅馬字符號之間的 mapping；成音節鼻音（Syllabic Nasal）區域用於記錄可獨立構成音節的鼻音及其羅馬字表示；聲調（Tone）區域則用於記錄聲調與相應羅馬字聲調符號或標記之間的 mapping。
 
-每一個 area 均由一個或多個 cell 組成。使用者可以通過區域下方的 **「+ 添加一格 / Add cell」**按鈕增加新的 cell。
+每一個 area 均由一個或多個 cell 組成。使用者可以通過區域下方的 **「+ 添加一格 / Add cell」** 按鈕增加新的 cell。
 
 當鼠標光標移至某一 cell 上方時，該 cell 的右上角會顯示 ❌ 按鈕，點擊即可刪除該 cell。為確保每個 area 始終保持可編輯狀態，**每個 area 至少保留一個 cell**；當某一 area 中僅剩一個 cell 時，該 cell 不可再被刪除。
 
