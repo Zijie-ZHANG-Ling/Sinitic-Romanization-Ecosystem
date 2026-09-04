@@ -62,6 +62,7 @@ The overall PhonSymbol interface is shown below. Two romanization-entry modes ar
 
 
 
+
 #### 「頭腹尾 M-N-C」模式<br>M-N-C Mode
 
 在 **「頭腹尾 M-N-C」模式**下，羅馬字錄入部分由六個相互獨立的區域（area；亦即論文中所稱的 unit 或 editable grid）組成：
