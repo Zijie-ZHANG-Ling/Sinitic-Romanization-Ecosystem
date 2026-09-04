@@ -146,6 +146,7 @@ As in M-N-C mode, additional cells can be created within each area using the **�
 Cell contents are entered in exactly the same way as in M-N-C mode: the **`symbol / 符號`** field contains the romanization symbol, while the **`note / 備注`** field contains the corresponding phoneme, or phone, or grapheme, together with any other required annotations.
 
 
+
 ### JSON 數據預覽
 ### JSON Data Preview
 
