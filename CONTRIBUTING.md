@@ -320,3 +320,21 @@ The first page 如下圖所示 / The first page is shown below:
 Organizer 如下圖所示 / The organizer is shown below:
 
 <img src="./assets/phonconvert_organizer.png" width="540" alt="PhonConvert phonology-and-romanization organizer">
+
+---
+
+### 原始數據輸入：富文本編輯與兩種模式<br>Data Input: The Rich Text Editor and Two Modes
+
+The first page 中的 **「富文本编辑 / Rich Text Editor」** 是接受原始字音數據的區域。這個區域可以接受兩種形式的原始數據，分別對應 **「古音小镜 / Guyin Xiaojing」—「字音表 / Pronunciation Table」** 模式切換按鈕可切換的兩種模式：
+
+- 在 **「古音小镜 / Guyin Xiaojing」模式** 下，可直接接受來自古音小镜（Kaom.net）網站的數據，具體操作步驟將在下文詳細介紹；
+- 在 **「字音表 / Pronunciation Table」模式** 下，可接受每行為 `汉字,声母,韵母,声调` 形式的數據（其中的逗號必須為英文半角逗號 `,`），例如 `間,tɕ,iæn,陰平55`，下一行也是如此。
+
+在「字音表 / Pronunciation Table」模式的數據中，**聲母一列可以留空**（表示零聲母），而**漢字、韻母、聲調三列必須有值**；不符合要求的行將在提取時被跳過。
+
+The **"富文本编辑 / Rich Text Editor"** area on the first page is where raw pronunciation data is entered. It accepts two forms of raw data, corresponding to the two modes available on the **"古音小镜 / Guyin Xiaojing" — "字音表 / Pronunciation Table"** mode switch:
+
+- In **"古音小镜 / Guyin Xiaojing" mode**, data from the Guyin Xiaojing website (Kaom.net) can be accepted directly; the detailed steps are described in a later section;
+- In **"字音表 / Pronunciation Table" mode**, the data should contain one entry per line in the form `汉字,声母,韵母,声调` (the commas must be half-width ASCII commas `,`), for example `間,tɕ,iæn,陰平55`, and so on for the following lines.
+
+In "字音表 / Pronunciation Table" mode data, **the initial field may be left empty** (indicating a zero initial), while **the character, final, and tone fields are required**; lines that do not meet these requirements will be skipped during extraction.
