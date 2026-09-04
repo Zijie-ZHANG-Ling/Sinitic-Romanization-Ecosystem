@@ -55,10 +55,6 @@ This design does not require PhonSymbol users to adopt a single type of linguist
 
 PhonSymbol 的整體介面如下圖所示。介面提供兩種羅馬字方案錄入模式，可通過頁面頂部的 **「頭腹尾 M-N-C / 韻母 Final」**切換按鈕進行選擇。
 
-![PhonSymbol M-N-C mode](./assets/phonsymbol_mnc_mode.png)
-
-![PhonSymbol Final mode](./assets/phonsymbol_final_mode.png)
-
 The overall PhonSymbol interface is shown below. Two romanization-entry modes are provided and can be selected using the **“M-N-C / Final”** mode switch located at the top of the interface.
 
 ![PhonSymbol M-N-C mode](./assets/phonsymbol_mnc_mode.png)
