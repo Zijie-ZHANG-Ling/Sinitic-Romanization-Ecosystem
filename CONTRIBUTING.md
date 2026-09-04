@@ -57,8 +57,9 @@ PhonSymbol 的整體介面如下圖所示。介面提供兩種羅馬字方案錄
 
 The overall PhonSymbol interface is shown below. Two romanization-entry modes are provided and can be selected using the **"头腹尾 M-N-C / 韵母 Final"** mode switch located at the top of the interface.
 
-<img src="./assets/phonsymbol_mnc_mode.png" width="360" alt="PhonSymbol M-N-C mode">
-<img src="./assets/phonsymbol_final_mode.png" width="360" alt="PhonSymbol Final mode">
+| 頭腹尾 M-N-C 模式 | 韻母 Final 模式 |
+|:---:|:---:|
+| <img src="./assets/phonsymbol_mnc_mode.png" alt="PhonSymbol M-N-C mode"> | <img src="./assets/phonsymbol_final_mode.png" alt="PhonSymbol Final mode"> |
 
 
 #### 「頭腹尾 M-N-C」模式
