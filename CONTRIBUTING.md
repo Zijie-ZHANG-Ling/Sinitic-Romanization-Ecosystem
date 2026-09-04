@@ -143,7 +143,7 @@ Cell contents are entered in exactly the same way as in M-N-C mode: the **`symbo
 
 PhonSymbol 介面下方的實時數據預覽區域如下圖所示 / The real-time data preview section at the bottom of the PhonSymbol interface is shown below:
 
-&lt;img src="./assets/json_preview.png" width="720" alt="PhonSymbol JSON data preview"&gt;
+<src="./assets/json_preview.png" width="360" alt="PhonSymbol JSON data preview">
 
 在 PhonSymbol 介面（包括「頭腹尾 M-N-C」模式與「韻母 Final」模式）下方，設有 **「实时数据预览 / REAL-TIME DATA PREVIEW (JSON)」** 區域，用於即時展示當前羅馬字方案的結構化數據。每當使用者在各個 area 中新增、修改或刪除 cell 時，下方 JSON 內容會同步更新，反映當前方案的完整數據結構。
 
