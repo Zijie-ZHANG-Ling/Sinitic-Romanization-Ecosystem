@@ -297,3 +297,26 @@ Where:
 - other scheme-related resources (such as pronunciation tables, conversion data, or test files) may be stored in the same folder when needed.
 
 Contributors should not manually create scheme JSON files incompatible with the PhonSymbol schema. Officially contributed scheme files should preferably be created and exported through PhonSymbol.
+
+
+---
+
+## PhonConvert
+
+### 兩個介面與整體工作流程<br>Two Pages and the Overall Workflow
+
+**PhonConvert** 是將現有字音數據資源與羅馬字方案相結合，快速製作羅馬字字音數據的工具。與 PhonSymbol 一樣，PhonConvert 也是一個瀏覽器前端工具。
+
+PhonConvert 包含兩個介面：一個是打開工具後默認進入的介面（下文稱為 **the first page**）；另一個是在 the first page 點擊 **「音系与拼音整理 / Organizer」** 按鈕後進入的 **「音系与拼音整理 / Phonology & Romanization」organizer**（即論文中所稱的 phonology-and-romanization organizer，下文統一簡稱為 **organizer**）。
+
+**PhonConvert** is a tool that combines existing pronunciation-data resources with a romanization scheme to efficiently produce romanized pronunciation data. Like PhonSymbol, PhonConvert is a browser-based front-end tool.
+
+PhonConvert consists of two pages. The first is the page shown by default when the tool is opened (referred to below as **the first page**). The second is the **"音系与拼音整理 / Phonology & Romanization" organizer**, entered by clicking the **"音系与拼音整理 / Organizer"** button on the first page. This organizer is the phonology-and-romanization organizer referred to in the paper, and is hereafter simply called the **organizer**.
+
+The first page 如下圖所示 / The first page is shown below:
+
+<img src="./assets/phonconvert_firstpage.png" width="540" alt="PhonConvert first page">
+
+Organizer 如下圖所示 / The organizer is shown below:
+
+<img src="./assets/phonconvert_organizer.png" width="540" alt="PhonConvert phonology-and-romanization organizer">
