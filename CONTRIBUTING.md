@@ -101,7 +101,7 @@ Within each cell, users enter the romanization symbol in the **`symbol / 符號`
 
 #### 「韻母 Final」模式<br>Final Mode
 
-在 **「韻母 Final」模式** 下，PhonSymbol 不再將韻母內部進一步拆分為韻頭（Medial）、韻腹（Nucleus）及韻尾（Coda），而是將其作為一個完整的**韻母（Final）**單位進行錄入。
+在 **「韻母 Final」模式** 下，PhonSymbol 不再將韻母內部進一步拆分為韻頭（Medial）、韻腹（Nucleus）及韻尾（Coda），而是將其作為一個完整的 **韻母（Final）** 單位進行錄入。
 
 因此，該模式的羅馬字錄入部分由四個相互獨立的 area 組成：
 
