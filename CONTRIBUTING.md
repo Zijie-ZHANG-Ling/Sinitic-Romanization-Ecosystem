@@ -79,7 +79,7 @@ The overall PhonSymbol interface is shown below. Two romanization-entry modes ar
 
 當鼠標光標移至某一 cell 上方時，該 cell 的右上角會顯示 ❌ 按鈕，點擊即可刪除該 cell。為確保每個 area 始終保持可編輯狀態，**每個 area 至少保留一個 cell**；當某一 area 中僅剩一個 cell 時，該 cell 不可再被刪除。
 
-在每個 cell 中，使用者按照前述格式，在 **`symbol / 符號`**欄填入 romanization symbol，並在 **`note / 備注`**欄填入其所對應的 phoneme、或 phone、或 grapheme，以及其他需要保存的備注信息。
+在每個 cell 中，使用者按照前述格式，在 **`symbol / 符號`** 欄填入 romanization symbol，並在 **`note / 備注`** 欄填入其所對應的 phoneme、或 phone、或 grapheme，以及其他需要保存的備注信息。
 
 In **M-N-C mode**, the romanization-entry interface consists of six independent areas (i.e., the units or editable grids referred to in the paper):
 
@@ -116,7 +116,7 @@ Within each cell, users enter the romanization symbol in the **`symbol / 符號`
 
 與「頭腹尾 M-N-C」模式相同，每個 area 均可通過 **「+ 添加一格 / Add cell」** 增加新的 cell；將鼠標光標置於某一 cell 上方時，可使用右上角顯示的 ❌ 按鈕刪除該 cell。每個 area 同樣至少保留一個 cell，因此當區域內僅剩一個 cell 時，該 cell 不可被刪除。
 
-每個 cell 的填寫方式亦完全相同：在 **`symbol / 符號`**欄填入 romanization symbol，在 **`note / 備注`**欄填入其所對應的 phoneme、或 phone、或 grapheme，以及其他所需的備注信息。
+每個 cell 的填寫方式亦完全相同：在 **`symbol / 符號`** 欄填入 romanization symbol，在 **`note / 備注`** 欄填入其所對應的 phoneme、或 phone、或 grapheme，以及其他所需的備注信息。
 
 In **Final mode**, PhonSymbol does not further divide the final into separate Medial, Nucleus, and Coda components. Instead, the **Final** is treated as a complete mapping unit.
 
