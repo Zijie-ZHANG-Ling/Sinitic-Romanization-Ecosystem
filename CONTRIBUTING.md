@@ -25,8 +25,7 @@ The scheme file should contain the complete mapping relationships and associated
 
 ## PhonSymbol
 
-### 基本錄入單元：Cell 與 symbol / note 欄位
-### Basic Entry Unit: Cells and the symbol / note Fields
+### 基本錄入單元：Cell 與 symbol / note 欄位<br>Basic Entry Unit: Cells and the symbol / note Fields
 
 每個格子的基本樣式如下圖所示 / The basic structure of each cell is shown below:
 
@@ -52,8 +51,7 @@ This design does not require PhonSymbol users to adopt a single type of linguist
 
 ---
 
-### PhonSymbol 整體介面與兩種錄入模式
-### PhonSymbol Interface and Two Entry Modes
+### PhonSymbol 整體介面與兩種錄入模式<br>PhonSymbol Interface and Two Entry Modes
 
 PhonSymbol 的整體介面如下圖所示。介面提供兩種羅馬字方案錄入模式，可通過頁面頂部的 **「头腹尾 M-N-C / 韵母 Final」**切換按鈕進行選擇。
 
