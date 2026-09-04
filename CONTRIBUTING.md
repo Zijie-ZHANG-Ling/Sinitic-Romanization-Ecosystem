@@ -303,7 +303,7 @@ Contributors should not manually create scheme JSON files incompatible with the 
 
 ## PhonConvert
 
-### 兩個介面與整體工作流程<br>Two Pages and the Overall Workflow
+### 兩個介面<br>Two Pages
 
 **PhonConvert** 是將現有字音數據資源與羅馬字方案相結合，快速製作羅馬字字音數據的工具。與 PhonSymbol 一樣，PhonConvert 也是一個瀏覽器前端工具。
 
