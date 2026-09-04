@@ -288,10 +288,12 @@ PhonSymbol 導出的 JSON 文件是本生態系統中保存羅馬字方案定義
 對於每一個羅馬字方案（scheme），貢獻者應建立一個獨立的文件夾，並將對應的 PhonSymbol JSON 文件保存在該文件夾中。
 
 例如：
+```text
 SchemeName/
 ├── SchemeName.json
 ├── README.md
 └── other resources
+```
 
 
 其中：
@@ -308,10 +310,12 @@ The JSON file exported by PhonSymbol serves as the standard scheme file for stor
 For each romanization scheme, contributors should create an independent folder and store the corresponding PhonSymbol-exported JSON file inside that folder.
 
 For example:
+```text
 SchemeName/
 ├── SchemeName.json
 ├── README.md
 └── other resources
+```
 
 
 Where:
