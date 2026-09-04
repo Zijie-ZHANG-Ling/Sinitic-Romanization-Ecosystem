@@ -26,6 +26,7 @@ The scheme file should contain the complete mapping relationships and associated
 ## PhonSymbol
 
 ### PhonSymbol：羅馬字方案錄入與結構化存儲
+### PhonSymbol: Romanization-Scheme Entry and Structured Storage
 
 **PhonSymbol** 提供一個表格型態的前端介面，用於錄入羅馬字方案中的基本映射關係。使用者可以在每個格子（cell）中記錄一個**音位（phoneme）、或音素（phone）、或字素（grapheme）**，以及與其對應（mapping）的**羅馬字符號（romanization symbol）**。
 
@@ -40,7 +41,6 @@ The scheme file should contain the complete mapping relationships and associated
 
 這種設計使 PhonSymbol 不限定使用者必須採用單一類型的語言學表示。根據不同語言、方言及羅馬字方案的設計需要，每個 mapping unit 可以是一個 phoneme、phone 或 grapheme，再與相應的 romanization symbol 建立對應關係。
 
-### PhonSymbol: Romanization-Scheme Entry and Structured Storage
 
 **PhonSymbol** provides a table-based front-end interface for entering the basic mapping relationships that constitute a romanization scheme. In each cell, users can record a **phoneme, or a phone, or a grapheme**, together with its corresponding **romanization symbol**.
 
