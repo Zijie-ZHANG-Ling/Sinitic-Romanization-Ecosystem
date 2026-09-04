@@ -25,51 +25,43 @@ The scheme file should contain the complete mapping relationships and associated
 
 ## PhonSymbol
 
-### PhonSymbol：羅馬字方案錄入與結構化存儲
-### PhonSymbol: Romanization-Scheme Entry and Structured Storage
+### 基本錄入單元：Cell 與 symbol / note 欄位
+### Basic Entry Unit: Cells and the symbol / note Fields
+
+每個格子的基本樣式如下圖所示 / The basic structure of each cell is shown below:
+
+<img src="./assets/phonsymbol-cell.png" width="400" alt="PhonSymbol cell structure">
 
 **PhonSymbol** 提供一個表格型態的前端介面，用於錄入羅馬字方案中的基本映射關係。使用者可以在每個格子（cell）中記錄一個**音位（phoneme）、或音素（phone）、或字素（grapheme）**，以及與其對應（mapping）的**羅馬字符號（romanization symbol）**。
 
-每個格子的基本樣式如下圖所示：
-
-![PhonSymbol cell structure](./assets/phonsymbol-cell.png)
-
 其中：
 
-* 在 **`symbol / 符號`** 欄中填入對應的**羅馬字符號（romanization symbol）**；
-* 在 **`note / 備注`** 欄中填入該符號所對應的**音位（phoneme）、或音素（phone）、或字素（grapheme）**，並可加入其他所需的備注信息。
+* 在 **`symbol / 符号`** 欄中填入對應的**羅馬字符號（romanization symbol）**；
+* 在 **`note / 备注`** 欄中填入該符號所對應的**音位（phoneme）、或音素（phone）、或字素（grapheme）**，並可加入其他所需的備注信息。
 
 這種設計使 PhonSymbol 不限定使用者必須採用單一類型的語言學表示。根據不同語言、方言及羅馬字方案的設計需要，每個 mapping unit 可以是一個 phoneme、phone 或 grapheme，再與相應的 romanization symbol 建立對應關係。
 
-
 **PhonSymbol** provides a table-based front-end interface for entering the basic mapping relationships that constitute a romanization scheme. In each cell, users can record a **phoneme, or a phone, or a grapheme**, together with its corresponding **romanization symbol**.
-
-The basic structure of each cell is shown below:
-
-![PhonSymbol cell structure](./assets/phonsymbol-cell.png)
 
 Within each cell:
 
-* enter the corresponding **romanization symbol** in the **`symbol / 符號`** field;
-* enter the associated **phoneme, or phone, or grapheme** in the **`note / 備注`** field, together with any other notes or annotations that may be needed.
+* enter the corresponding **romanization symbol** in the **`symbol / 符号`** field;
+* enter the associated **phoneme, or phone, or grapheme** in the **`note / 备注`** field, together with any other notes or annotations that may be needed.
 
 This design does not require PhonSymbol users to adopt a single type of linguistic representation. Depending on the language, variety, and design principles of a particular romanization scheme, each mapping unit may represent a phoneme, a phone, or a grapheme, which is then mapped to the corresponding romanization symbol.
 
-
+---
 
 ### PhonSymbol 整體介面與兩種錄入模式
-
 ### PhonSymbol Interface and Two Entry Modes
 
-PhonSymbol 的整體介面如下圖所示。介面提供兩種羅馬字方案錄入模式，可通過頁面頂部的 **「頭腹尾 M-N-C / 韻母 Final」**切換按鈕進行選擇。
+PhonSymbol 的整體介面如下圖所示。介面提供兩種羅馬字方案錄入模式，可通過頁面頂部的 **「头腹尾 M-N-C / 韵母 Final」**切換按鈕進行選擇。
 
-The overall PhonSymbol interface is shown below. Two romanization-entry modes are provided and can be selected using the **“M-N-C / Final”** mode switch located at the top of the interface.
+The overall PhonSymbol interface is shown below. Two romanization-entry modes are provided and can be selected using the **"头腹尾 M-N-C / 韵母 Final"** mode switch located at the top of the interface.
 
-![PhonSymbol M-N-C mode](./assets/phonsymbol_mnc_mode.png)
+<img src="./assets/phonsymbol_mnc_mode.png" width="720" alt="PhonSymbol M-N-C mode">
+<img src="./assets/phonsymbol_final_mode.png" width="720" alt="PhonSymbol Final mode">
 
-![PhonSymbol Final mode](./assets/phonsymbol_final_mode.png)
-
----
 
 #### 「頭腹尾 M-N-C」模式
 
