@@ -345,9 +345,9 @@ In "字音表 / Pronunciation Table" mode data, **the initial field may be left 
 
 **步驟 1：打開索引頁並選擇語言地點 / Step 1: Open the index page and select a language location**
 
-打開古音小镜 Kaom.net 的漢語族語言字音索引頁（http://www.kaom.net/si_x.php），並選擇一個目標語言地點。
+打開古音小镜 Kaom.net 的漢語族語言字音索引頁（ **http://www.kaom.net/si_x.php** ），並選擇一個目標語言地點。
 
-Open the Kaom.net Sinitic-language pronunciation index at http://www.kaom.net/si_x.php and select a target language location.
+Open the Kaom.net Sinitic-language pronunciation index at **http://www.kaom.net/si_x.php** and select a target language location.
 
 索引頁如下圖所示 / The index page is shown below:
 
