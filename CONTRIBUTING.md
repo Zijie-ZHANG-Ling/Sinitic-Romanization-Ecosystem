@@ -284,7 +284,7 @@ SchemeName/
 
 其中：
 
-- `SchemeName.json` 為由 PhonSymbol 導出的 scheme file，保存該方案的 `scheme_name`、各 area 的 mapping 關係，以及每個 cell 的 `symbol` 與 `note` 信息；
+- `SchemeName.json` 為由 PhonSymbol 導出的 scheme file；
 - `README.md` 可用於介紹該方案的設計原則、適用語言、音系分析及其他相關信息；
 - 其他與該方案相關的資源（如字音表、轉換數據或測試文件）可根據需要保存在同一文件夾內。
 
@@ -292,7 +292,7 @@ SchemeName/
 
 Where:
 
-- `SchemeName.json` is the scheme file exported from PhonSymbol, storing the scheme name, area-level mappings, and the `symbol` / `note` information of each cell;
+- `SchemeName.json` is the scheme file exported from PhonSymbol;
 - `README.md` can describe the design principles, target language or variety, phonological analysis, and related information of the scheme;
 - other scheme-related resources (such as pronunciation tables, conversion data, or test files) may be stored in the same folder when needed.
 
