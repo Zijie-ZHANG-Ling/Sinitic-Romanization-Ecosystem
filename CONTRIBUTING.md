@@ -154,6 +154,8 @@ The PhonSymbol interface, including both **M-N-C mode** and **Final mode**, prov
 
 Whenever users add, modify, or remove cells in any area, the JSON preview is updated simultaneously to reflect the current complete data structure of the scheme.
 
+![JSON Preview](./assets/json_preview.png)
+
 ---
 
 PhonSymbol 使用 JSON（JavaScript Object Notation）作為羅馬字方案的標準化存儲格式。JSON 是一種輕量級、易於人類閱讀，同時方便機器解析的結構化數據格式。
