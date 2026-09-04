@@ -29,7 +29,7 @@ The scheme file should contain the complete mapping relationships and associated
 
 每個格子的基本樣式如下圖所示 / The basic structure of each cell is shown below:
 
-<img src="./assets/phonsymbol-cell.png" width="400" alt="PhonSymbol cell structure">
+<img src="./assets/phonsymbol-cell.png" width="180" alt="PhonSymbol cell structure">
 
 **PhonSymbol** 提供一個表格型態的前端介面，用於錄入羅馬字方案中的基本映射關係。使用者可以在每個格子（cell）中記錄一個**音位（phoneme）、或音素（phone）、或字素（grapheme）**，以及與其對應（mapping）的**羅馬字符號（romanization symbol）**。
 
@@ -53,12 +53,12 @@ This design does not require PhonSymbol users to adopt a single type of linguist
 
 ### PhonSymbol 整體介面與兩種錄入模式<br>PhonSymbol Interface and Two Entry Modes
 
-PhonSymbol 的整體介面如下圖所示。介面提供兩種羅馬字方案錄入模式，可通過頁面頂部的 **「头腹尾 M-N-C / 韵母 Final」**切換按鈕進行選擇。
+PhonSymbol 的整體介面如下圖所示。介面提供兩種羅馬字方案錄入模式，可通過頁面頂部的 **「头腹尾 M-N-C / 韵母 Final」** 切換按鈕進行選擇。
 
 The overall PhonSymbol interface is shown below. Two romanization-entry modes are provided and can be selected using the **"头腹尾 M-N-C / 韵母 Final"** mode switch located at the top of the interface.
 
-<img src="./assets/phonsymbol_mnc_mode.png" width="720" alt="PhonSymbol M-N-C mode">
-<img src="./assets/phonsymbol_final_mode.png" width="720" alt="PhonSymbol Final mode">
+<img src="./assets/phonsymbol_mnc_mode.png" width="360" alt="PhonSymbol M-N-C mode">
+<img src="./assets/phonsymbol_final_mode.png" width="360" alt="PhonSymbol Final mode">
 
 
 #### 「頭腹尾 M-N-C」模式
