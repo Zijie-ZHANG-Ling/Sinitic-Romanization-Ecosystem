@@ -393,15 +393,29 @@ Organizer 介面頂端的橫向滾動條中，每個 tab 顯示一個韻母，�
 
 在介面左側 panel 的 **「韵母 IPA/RAW / Final IPA/RAW」** 輸入框中，可輸入或修改當前韻母；頂部橫向滾動條中當前 tab 顯示的韻母會隨之同步改變。在介面左側 panel 的 **「韵母 Symbol / Final Symbol」** 輸入框中，可輸入此韻母所 mapping 到的羅馬字表示；在其下方的 **「韵母 Note / Final Note」** 中，可輸入任何關於此韻母及其羅馬字的備注信息。
 
-In the horizontal scroll bar at the top of the organizer interface, each tab displays one final, i.e., a final directly extracted and parsed from the raw data.
-
-In the **"韵母 IPA/RAW / Final IPA/RAW"** field on the left panel, the current final can be entered or modified; the final shown in the current tab of the top horizontal scroll bar updates accordingly. In the **"韵母 Symbol / Final Symbol"** field on the left panel, the romanized representation to which this final is mapped can be entered; and in the **"韵母 Note / Final Note"** field below it, any notes concerning this final and its romanization can be recorded.
-
 主表中的 **「声母 IPA/RAW / Initial IPA/RAW」** 一列列出了所有從原始字音數據提取解析出的聲母——不論某個聲母能否與當前 tab 所選韻母組成合法音節。因此，無論選擇哪一個韻母 tab，這一列的內容都不會改變。這一列中的每個聲母數據均可由使用者自行修改，以便修復原始數據中可能存在的錯誤信息。
 
 在「声母 IPA/RAW / Initial IPA/RAW」左側的 **「声母 Symbol / Initial Symbol」** 一列中，可填入每個聲母所 mapping 到的羅馬字符號。其中，**GENERAL** 輸入框中的內容在任何韻母 tab 下都保持相同，而 **「搭配当前韵母 / CURRENT-FINAL SPECIFIC」** 輸入框中的內容僅在當前所選韻母 tab 下存在和生效。
 
 在「声母 Symbol / Initial Symbol」再左側的 **「声母 Note / Initial Note」** 一列中，可填入關於每個聲母及其羅馬字的任何備注信息。
+
+在 **「声母 IPA/RAW / Initial IPA/RAW」** 列右側的 **「韵母 数据 / Data for Final」** 一列中，列出了每個聲母與當前所選 tab 韻母形成的「聲母＋韻母」組合下，字音表中實際存在的音節的聲調，以及每個「聲母＋韻母＋聲調」（聲韻調）組合所對應的漢字（這些聲調與漢字信息均從原始字音數據中提取解析而來）。所有聲調信息及其漢字信息均在可編輯框內，使用者可自行編輯；也可點擊 **「+ 添加一项 / Add Item」** 按鈕，在該「聲母＋韻母」組合下添加更多聲調及其對應的漢字，以補充原始字音數據中可能缺失的數據。
+
+從原始數據提取解析出的聲調及其所 mapping 到的羅馬字符號，在 organizer 介面左側 panel 下方的 **「全局声调设置 / Global Tone Settings」** 區域填寫。使用者需要將「韵母 数据 / Data for Final」一列中列出的聲調數據，填入 **「声调 / Tone:」** 行左側的 **「调值/调类 / Tone value/category」** 輸入框，並在其右側的 **「Symbol / 符号」** 輸入框中填入此聲調所 mapping 到的羅馬字符號。如需添加新的聲調及其 mapping，可點擊下方的 **「+ 添加声调行 / Add Tone Row」** 按鈕。完成以上操作，才能在工具底層建立完整的聲調數據 mapping，從而生成正確的羅馬字拼寫。
+
+在正確位置填入聲母、韻母所 mapping 到的羅馬字符號，並填寫好從原始數據提取解析的聲調數據及其 mapping 到的聲調羅馬字符號後，主表最右側的 **Syllable/Combination** 一列便會顯示每個音節的羅馬字拼寫，如下圖所示。聲調的羅馬字符號標在聲母與韻母之後，這一位置目前無法更改。
+
+<img src="./assets/phonconvert_romdata_org.png" width="720" alt="PhonConvert organizer with romanization mappings filled in and syllables generated">
+
+**「全局声调设置 / Global Tone Settings」** 設置的是當前語言／方言的全部聲調，不受所選韻母 tab 的影響。此區域下方的 **「声调 Note / Tone Note:」** 區域可供使用者填寫任何關於聲調及其 mapping 信息的備注；此輸入框針對整體所有聲調，每個聲調沒有自己獨立的備注填寫區域。
+
+**「声母 Symbol / Initial Symbol」** 列中的 **「搭配当前韵母 / CURRENT-FINAL SPECIFIC」** 輸入框，主要是為漢語拼音中 `ying`、`yan`、`wen`、`wu` 這類音節的拼寫生成而準備的。例如，當前所選韻母 tab 對應的羅馬字是 `ing` 或 `u` 時，零聲母搭配這兩個韻母需要寫成 `y` 或 `w`，而搭配其他韻母時不這樣寫；此時便可在韻母羅馬字為 `ing` 或 `u` 的 tab 下，在零聲母所在行的「搭配当前韵母 / CURRENT-FINAL SPECIFIC」輸入框中填寫 `y` 或 `w`，即可生成 `ying`、`wu` 這樣的音節拼寫，而其他韻母下的零聲母音節不含 `y` 或 `w`。
+
+對於要生成 `yan`、`wen` 這類拼寫的情況：若韻母 tab 對應的羅馬字是 `ian` 或 `uen`，僅在韻母之前加上聲母羅馬字是無法生成 `yan` 或 `wen` 的。為此，「搭配当前韵母 / CURRENT-FINAL SPECIFIC」輸入框專門支持一條 **`-A+B` 替換規則**：當輸入內容為 `-A+B` 的形式，且 `A` 是當前韻母羅馬字的第一個字符時，韻母羅馬字的第一個字符會被刪去並由 `B` 替代。因此，當韻母羅馬字為 `ian` 或 `uen` 時，輸入 `-i+y` 或 `-u+w`，即可生成 `yan` 或 `wen`。
+
+In the horizontal scroll bar at the top of the organizer interface, each tab displays one final, i.e., a final directly extracted and parsed from the raw data.
+
+In the **"韵母 IPA/RAW / Final IPA/RAW"** field on the left panel, the current final can be entered or modified; the final shown in the current tab of the top horizontal scroll bar updates accordingly. In the **"韵母 Symbol / Final Symbol"** field on the left panel, the romanized representation to which this final is mapped can be entered; and in the **"韵母 Note / Final Note"** field below it, any notes concerning this final and its romanization can be recorded.
 
 The **"声母 IPA/RAW / Initial IPA/RAW"** column in the main table lists all initials extracted and parsed from the raw pronunciation data, regardless of whether a given initial can form a legal syllable with the final selected in the current tab. The contents of this column therefore remain unchanged no matter which final tab is selected. Every initial in this column can be edited by the user, allowing possible errors in the raw data to be corrected.
 
@@ -409,27 +423,13 @@ In the **"声母 Symbol / Initial Symbol"** column to the left of "声母 IPA/RA
 
 In the **"声母 Note / Initial Note"** column further to the left, any notes concerning each initial and its romanization can be recorded.
 
-在 **「声母 IPA/RAW / Initial IPA/RAW」** 列右側的 **「韵母 数据 / Data for Final」** 一列中，列出了每個聲母與當前所選 tab 韻母形成的「聲母＋韻母」組合下，字音表中實際存在的音節的聲調，以及每個「聲母＋韻母＋聲調」（聲韻調）組合所對應的漢字（這些聲調與漢字信息均從原始字音數據中提取解析而來）。所有聲調信息及其漢字信息均在可編輯框內，使用者可自行編輯；也可點擊 **「+ 添加一项 / Add Item」** 按鈕，在該「聲母＋韻母」組合下添加更多聲調及其對應的漢字，以補充原始字音數據中可能缺失的數據。
-
 In the **"韵母 数据 / Data for Final"** column to the right of **"声母 IPA/RAW / Initial IPA/RAW"**, the tones of the syllables that actually exist in the pronunciation data are listed for each combination of an initial with the final selected in the current tab, together with the Chinese characters corresponding to each initial–final–tone combination (these tones and characters are extracted and parsed from the raw pronunciation data). All tone information and the associated characters are contained in editable fields and can be modified by the user. The **"+ 添加一项 / Add Item"** button can be used to add further tones and their associated characters under a given initial–final combination, supplementing data that may be missing from the raw pronunciation source.
-
-從原始數據提取解析出的聲調及其所 mapping 到的羅馬字符號，在 organizer 介面左側 panel 下方的 **「全局声调设置 / Global Tone Settings」** 區域填寫。使用者需要將「韵母 数据 / Data for Final」一列中列出的聲調數據，填入 **「声调 / Tone:」** 行左側的 **「调值/调类 / Tone value/category」** 輸入框，並在其右側的 **「Symbol / 符号」** 輸入框中填入此聲調所 mapping 到的羅馬字符號。如需添加新的聲調及其 mapping，可點擊下方的 **「+ 添加声调行 / Add Tone Row」** 按鈕。完成以上操作，才能在工具底層建立完整的聲調數據 mapping，從而生成正確的羅馬字拼寫。
-
-在正確位置填入聲母、韻母所 mapping 到的羅馬字符號，並填寫好從原始數據提取解析的聲調數據及其 mapping 到的聲調羅馬字符號後，主表最右側的 **Syllable/Combination** 一列便會顯示每個音節的羅馬字拼寫，如下圖所示。聲調的羅馬字符號標在聲母與韻母之後，這一位置目前無法更改。
 
 The tones extracted and parsed from the raw data, together with the romanized symbols to which they are mapped, are entered in the **"全局声调设置 / Global Tone Settings"** area at the bottom of the organizer's left panel. For each tone listed in the "韵母 数据 / Data for Final" column, the user enters the raw tone value into the **"调值/调类 / Tone value/category"** field on the left side of a **"声调 / Tone:"** row, and enters the romanized symbol to which that tone is mapped in the **"Symbol / 符号"** field to its right. To add further tones and their mappings, click the **"+ 添加声调行 / Add Tone Row"** button below. Only after these steps are completed is the underlying tone mapping fully established, allowing correct romanized spellings to be generated.
 
-Once the romanized symbols for the initials and finals have been entered in the appropriate fields, and the tones extracted from the raw data together with their mapped romanized tone symbols have been filled in, the **Syllable/Combination** column on the far right of the main table displays the romanized spelling of each syllable, as shown below. The romanized tone symbol is placed after the initial and final; this position currently cannot be changed.
-
-<img src="./assets/phonconvert_romdata_org.png" width="720" alt="PhonConvert organizer with romanization mappings filled in and syllables generated">
-
-**「全局声调设置 / Global Tone Settings」** 設置的是當前語言／方言的全部聲調，不受所選韻母 tab 的影響。此區域下方的 **「声调 Note / Tone Note:」** 區域可供使用者填寫任何關於聲調及其 mapping 信息的備注；此輸入框針對整體所有聲調，每個聲調沒有自己獨立的備注填寫區域。
+Once the romanized symbols for the initials and finals have been entered in the appropriate fields, and the tones extracted from the raw data together with their mapped romanized tone symbols have been filled in, the **Syllable/Combination** column on the far right of the main table displays the romanized spelling of each syllable, as shown above. The romanized tone symbol is placed after the initial and final; this position currently cannot be changed.
 
 The **"全局声调设置 / Global Tone Settings"** area defines all tones of the current language or variety and is not affected by the selected final tab. The **"声调 Note / Tone Note:"** field below this area can be used to record any notes concerning the tones and their mappings; this field applies to the tones as a whole, and no separate note field is provided for each individual tone.
-
-**「声母 Symbol / Initial Symbol」** 列中的 **「搭配当前韵母 / CURRENT-FINAL SPECIFIC」** 輸入框，主要是為漢語拼音中 `ying`、`yan`、`wen`、`wu` 這類音節的拼寫生成而準備的。例如，當前所選韻母 tab 對應的羅馬字是 `ing` 或 `u` 時，零聲母搭配這兩個韻母需要寫成 `y` 或 `w`，而搭配其他韻母時不這樣寫；此時便可在韻母羅馬字為 `ing` 或 `u` 的 tab 下，在零聲母所在行的「搭配当前韵母 / CURRENT-FINAL SPECIFIC」輸入框中填寫 `y` 或 `w`，即可生成 `ying`、`wu` 這樣的音節拼寫，而其他韻母下的零聲母音節不含 `y` 或 `w`。
-
-對於要生成 `yan`、`wen` 這類拼寫的情況：若韻母 tab 對應的羅馬字是 `ian` 或 `uen`，僅在韻母之前加上聲母羅馬字是無法生成 `yan` 或 `wen` 的。為此，「搭配当前韵母 / CURRENT-FINAL SPECIFIC」輸入框專門支持一條 **`-A+B` 替換規則**：當輸入內容為 `-A+B` 的形式，且 `A` 是當前韻母羅馬字的第一個字符時，韻母羅馬字的第一個字符會被刪去並由 `B` 替代。因此，當韻母羅馬字為 `ian` 或 `uen` 時，輸入 `-i+y` 或 `-u+w`，即可生成 `yan` 或 `wen`。
 
 The **"搭配当前韵母 / CURRENT-FINAL SPECIFIC"** field in the **"声母 Symbol / Initial Symbol"** column is designed primarily for generating the spellings of syllables such as `ying`, `yan`, `wen`, and `wu` in Hanyu Pinyin. For example, when the romanization of the currently selected final tab is `ing` or `u`, a zero initial combining with these two finals needs to be written as `y` or `w`, whereas it is not written this way with other finals. In this case, under the final tab whose romanization is `ing` or `u`, entering `y` or `w` in the "搭配当前韵母 / CURRENT-FINAL SPECIFIC" field of the zero-initial row generates syllable spellings such as `ying` and `wu`, while zero-initial syllables under other finals remain without `y` or `w`.
 
