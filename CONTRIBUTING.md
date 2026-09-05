@@ -396,3 +396,15 @@ Organizer 介面頂端的橫向滾動條中，每個 tab 顯示一個韻母，�
 In the horizontal scroll bar at the top of the organizer interface, each tab displays one final, i.e., a final directly extracted and parsed from the raw data.
 
 In the **"韵母 IPA/RAW / Final IPA/RAW"** field on the left panel, the current final can be entered or modified; the final shown in the current tab of the top horizontal scroll bar updates accordingly. In the **"韵母 Symbol / Final Symbol"** field on the left panel, the romanized representation to which this final is mapped can be entered; and in the **"韵母 Note / Final Note"** field below it, any notes concerning this final and its romanization can be recorded.
+
+主表中的 **「声母 IPA/RAW / Initial IPA/RAW」** 一列列出了所有從原始字音數據提取解析出的聲母——不論某個聲母能否與當前 tab 所選韻母組成合法音節。因此，無論選擇哪一個韻母 tab，這一列的內容都不會改變。這一列中的每個聲母數據均可由使用者自行修改，以便修復原始數據中可能存在的錯誤信息。
+
+在「声母 IPA/RAW / Initial IPA/RAW」左側的 **「声母 Symbol / Initial Symbol」** 一列中，可填入每個聲母所 mapping 到的羅馬字符號。其中，**GENERAL** 輸入框中的內容在任何韻母 tab 下都保持相同，而 **「搭配当前韵母 / CURRENT-FINAL SPECIFIC」** 輸入框中的內容僅在當前所選韻母 tab 下存在和生效。
+
+在「声母 Symbol / Initial Symbol」再左側的 **「声母 Note / Initial Note」** 一列中，可填入關於每個聲母及其羅馬字的任何備注信息。
+
+The **"声母 IPA/RAW / Initial IPA/RAW"** column in the main table lists all initials extracted and parsed from the raw pronunciation data, regardless of whether a given initial can form a legal syllable with the final selected in the current tab. The contents of this column therefore remain unchanged no matter which final tab is selected. Every initial in this column can be edited by the user, allowing possible errors in the raw data to be corrected.
+
+In the **"声母 Symbol / Initial Symbol"** column to the left of "声母 IPA/RAW / Initial IPA/RAW", the romanized symbol to which each initial is mapped can be entered. The contents of the **GENERAL** field remain the same under any final tab, whereas the contents of the **"搭配当前韵母 / CURRENT-FINAL SPECIFIC"** field exist and take effect only under the currently selected final tab.
+
+In the **"声母 Note / Initial Note"** column further to the left, any notes concerning each initial and its romanization can be recorded.
