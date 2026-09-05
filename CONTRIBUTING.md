@@ -372,3 +372,15 @@ For the selected location, click the **"音系"** (phonology) button to open its
 在全字表頁面中全選頁面內容（Windows / Linux 按 **Ctrl+A**,macOS 按 **Command+A**)，複製後粘貼到 PhonConvert the first page 的 **「富文本编辑 / Rich Text Editor」** 中。
 
 On the full character-pronunciation table page, select all page content (**Ctrl+A** on Windows / Linux or **Command+A** on macOS), copy it, and paste it into the **"富文本编辑 / Rich Text Editor"** on the first page of PhonConvert.
+
+---
+
+### 數據提取與進入 Organizer<br>Data Extraction and Entering the Organizer
+
+無論 **「富文本编辑 / Rich Text Editor」** 接受的是 **「古音小镜 / Guyin Xiaojing」** 還是 **「字音表 / Pronunciation Table」** 模式的數據，點擊 **「提取数据 / Extract Data」** 後，兩種來源的數據都會被提取為相同的內部格式，匯入同一條數據流程。提取完成後，再點擊 **「音系与拼音整理 / Organizer」**，即可進入 organizer；此時 organizer 中已包含從原始字音數據提取解析出的數據。
+
+Regardless of whether the **"富文本编辑 / Rich Text Editor"** receives data in **"古音小镜 / Guyin Xiaojing"** mode or **"字音表 / Pronunciation Table"** mode, clicking **"提取数据 / Extract Data"** extracts the data from either source into the same internal format and funnels it into the same processing pipeline. After extraction is complete, clicking **"音系与拼音整理 / Organizer"** enters the organizer, which by then contains the data parsed from the raw pronunciation source.
+
+載入提取數據後的 organizer 如下圖所示 / The organizer loaded with the extracted data is shown below:
+
+<img src="./assets/phonconvert_data_org.png" width="720" alt="PhonConvert organizer loaded with extracted data">
