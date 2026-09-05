@@ -20,9 +20,9 @@ The ecosystem was initially developed around cross-lingual romanization design, 
 
 The ecosystem aims to provide an **open, extensible, and community-driven platform for romanization resources and infrastructure**, enabling researchers, language communities, and developers to design, enter, store, share, and extend romanization schemes for different languages and varieties, together with pronunciation dictionaries, structured datasets, and downstream tools.
 
-羅馬字方案及相關數據的**設計、錄入、結構化存儲、文件格式、共享方式與貢獻規範**將在本 README 及相關文檔（如 **CONTRIBUTING.md**）中詳細介紹。我們希望任何新的語言、方言或替代方案都能在共同的數據規範與工具基礎上加入本生態系統，而不需要重新建立一套彼此不兼容的基礎設施。
+羅馬字方案及相關數據的**設計、錄入、結構化存儲、文件格式、共享方式與貢獻規範**將在本 README 及相關文檔（如 **[CONTRIBUTING.md](./CONTRIBUTING.md)**）中詳細介紹。我們希望任何新的語言、方言或替代方案都能在共同的數據規範與工具基礎上加入本生態系統，而不需要重新建立一套彼此不兼容的基礎設施。
 
-Detailed specifications for the **design, entry, structured storage, file formats, sharing, and contribution of romanization schemes and related data** are provided in this README and the accompanying documentation (such as **CONTRIBUTING.md**). Our goal is to allow new languages, varieties, and alternative schemes to join the ecosystem through shared data standards and reusable tools rather than requiring each project to build an isolated and incompatible infrastructure from scratch.
+Detailed specifications for the **design, entry, structured storage, file formats, sharing, and contribution of romanization schemes and related data** are provided in this README and the accompanying documentation (such as **[CONTRIBUTING.md](./CONTRIBUTING.md)**). Our goal is to allow new languages, varieties, and alternative schemes to join the ecosystem through shared data standards and reusable tools rather than requiring each project to build an isolated and incompatible infrastructure from scratch.
 
 
 ---
