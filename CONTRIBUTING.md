@@ -384,3 +384,15 @@ Regardless of whether the **"富文本编辑 / Rich Text Editor"** receives data
 載入提取數據後的 organizer 如下圖所示 / The organizer loaded with the extracted data is shown below:
 
 <img src="./assets/phonconvert_data_org.png" width="720" alt="PhonConvert organizer loaded with extracted data">
+
+---
+
+### Organizer 介面<br>The Organizer Interface
+
+Organizer 介面頂端的橫向滾動條中，每個 tab 顯示一個韻母，即從原始數據中直接提取解析得到的韻母。
+
+在介面左側 panel 的 **「韵母 IPA/RAW / Final IPA/RAW」** 輸入框中，可輸入或修改當前韻母；頂部橫向滾動條中當前 tab 顯示的韻母會隨之同步改變。在介面左側 panel 的 **「韵母 Symbol / Final Symbol」** 輸入框中，可輸入此韻母所 mapping 到的羅馬字表示；在其下方的 **「韵母 Note / Final Note」** 中，可輸入任何關於此韻母及其羅馬字的備注信息。
+
+In the horizontal scroll bar at the top of the organizer interface, each tab displays one final, i.e., a final directly extracted and parsed from the raw data.
+
+In the **"韵母 IPA/RAW / Final IPA/RAW"** field on the left panel, the current final can be entered or modified; the final shown in the current tab of the top horizontal scroll bar updates accordingly. In the **"韵母 Symbol / Final Symbol"** field on the left panel, the romanized representation to which this final is mapped can be entered; and in the **"韵母 Note / Final Note"** field below it, any notes concerning this final and its romanization can be recorded.
