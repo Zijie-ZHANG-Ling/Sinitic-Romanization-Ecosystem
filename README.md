@@ -20,9 +20,9 @@ The ecosystem was initially developed around cross-lingual romanization design, 
 
 The ecosystem aims to provide an **open, extensible, and community-driven platform for romanization resources and infrastructure**, enabling researchers, language communities, and developers to design, enter, store, share, and extend romanization schemes for different languages and varieties, together with pronunciation dictionaries, structured datasets, and downstream tools.
 
-羅馬字方案及相關數據的**設計、錄入、結構化存儲、文件格式、共享方式與貢獻規範**將在本 README 及相關文檔中詳細介紹。我們希望任何新的語言、方言或替代方案都能在共同的數據規範與工具基礎上加入本生態系統，而不需要重新建立一套彼此不兼容的基礎設施。
+羅馬字方案及相關數據的**設計、錄入、結構化存儲、文件格式、共享方式與貢獻規範**將在本 README 及相關文檔（如 **CONTRIBUTING.md**）中詳細介紹。我們希望任何新的語言、方言或替代方案都能在共同的數據規範與工具基礎上加入本生態系統，而不需要重新建立一套彼此不兼容的基礎設施。
 
-Detailed specifications for the **design, entry, structured storage, file formats, sharing, and contribution of romanization schemes and related data** are provided in this README and the accompanying documentation. Our goal is to allow new languages, varieties, and alternative schemes to join the ecosystem through shared data standards and reusable tools rather than requiring each project to build an isolated and incompatible infrastructure from scratch.
+Detailed specifications for the **design, entry, structured storage, file formats, sharing, and contribution of romanization schemes and related data** are provided in this README and the accompanying documentation (such as **CONTRIBUTING.md**). Our goal is to allow new languages, varieties, and alternative schemes to join the ecosystem through shared data standards and reusable tools rather than requiring each project to build an isolated and incompatible infrastructure from scratch.
 
 
 ---
@@ -111,11 +111,15 @@ Detailed descriptions of MandRomZJ1 and CantRomZJ1 are available in the paper. D
 
 **PhonEngine 是本生態系統最核心的基礎設施之一。**
 
-它旨在為不同語言、方言及不同羅馬字方案提供統一的**方案錄入、結構化存儲、字音數據製作及數據交換流程**，主要由兩個軟件組成：
+它旨在為不同語言、方言及不同羅馬字方案提供統一的**方案錄入、結構化存儲、字音數據製作及數據交換流程**，主要由兩個軟件組成： **PhonSymbol** 以及 **PhonConvert**。
+
+PhonSymbol 與 PhonConvert 的詳細使用方式與數據規範，請參閱 [CONTRIBUTING.md](./CONTRIBUTING.md)。
 
 **PhonEngine is one of the core infrastructure components of the ecosystem.**
 
-It provides a unified workflow for **scheme authoring, structured storage, pronunciation-data construction, and data exchange** across different languages, varieties, and romanization schemes. It currently consists of two major tools:
+It provides a unified workflow for **scheme authoring, structured storage, pronunciation-data construction, and data exchange** across different languages, varieties, and romanization schemes. It currently consists of two major tools: **PhonSymbol** and **PhonConvert**.
+
+For detailed usage and data specifications of PhonSymbol and PhonConvert, please refer to [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 
 #### PhonSymbol
@@ -154,6 +158,10 @@ Its major functions include:
 - 定義本生態系統中字音表及相關 JSON／CSV 數據的標準格式；
 - 為進一步的 G2P、P2G、輸入法、NLP、Speech 及語言資源處理提供結構化數據。
 
+PhonSymbol + PhonConvert 共同定義了本生態系統中羅馬字方案及其配套字音數據的標準工作流程，覆蓋方案的創建、存儲、交換、重現與擴展。
+
+PhonSymbol 與 PhonConvert 的詳細使用方式與數據規範，請參閱 [CONTRIBUTING.md](./CONTRIBUTING.md)。
+
 **PhonConvert** is a tool for constructing large-scale pronunciation dictionaries from existing phonological resources and romanization schemes.
 
 Its major functions include:
@@ -167,6 +175,7 @@ Its major functions include:
 
 Together, **PhonSymbol + PhonConvert** define the standard workflow through which romanization schemes and their associated pronunciation data are created, stored, exchanged, reproduced, and extended within the ecosystem.
 
+For detailed usage and data specifications of PhonSymbol and PhonConvert, please refer to [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ### 4. 其他基礎設施與生態兼容
 ### 4. Additional Infrastructure and Interoperability
@@ -208,6 +217,8 @@ These currently include:
 - fork、修改並提交新的資源；
 - 共同擴展整個 ecosystem 所覆蓋的語言與功能。
 
+詳細的貢獻流程、文件規範與推薦的 repository 結構，請參閱 [CONTRIBUTING.md](./CONTRIBUTING.md)。
+
 This repository is intended not merely as storage for the romanization schemes presented in the accompanying paper, but as a continuously extensible open ecosystem.
 
 Under the shared PhonEngine data specifications, researchers, language communities, and developers are invited to:
@@ -219,4 +230,4 @@ Under the shared PhonEngine data specifications, researchers, language communiti
 - fork, modify, and contribute new resources;
 - collectively expand the linguistic coverage and functionality of the ecosystem.
 
-Detailed contribution procedures, file specifications, and recommended repository structures are described below.
+For detailed contribution procedures, file specifications, and recommended repository structures, please refer to [CONTRIBUTING.md](./CONTRIBUTING.md).
