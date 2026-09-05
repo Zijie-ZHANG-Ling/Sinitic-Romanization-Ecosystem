@@ -413,3 +413,16 @@ In the **"声母 Note / Initial Note"** column further to the left, any notes co
 
 In the **"韵母 数据 / Data for Final"** column to the right of **"声母 IPA/RAW / Initial IPA/RAW"**, the tones of the syllables that actually exist in the pronunciation data are listed for each combination of an initial with the final selected in the current tab, together with the Chinese characters corresponding to each initial–final–tone combination (these tones and characters are extracted and parsed from the raw pronunciation data). All tone information and the associated characters are contained in editable fields and can be modified by the user. The **"+ 添加一项 / Add Item"** button can be used to add further tones and their associated characters under a given initial–final combination, supplementing data that may be missing from the raw pronunciation source.
 
+從原始數據提取解析出的聲調及其所 mapping 到的羅馬字符號，在 organizer 介面左側 panel 下方的 **「全局声调设置 / Global Tone Settings」** 區域填寫。使用者需要將「韵母 数据 / Data for Final」一列中列出的聲調數據，填入 **「声调 / Tone:」** 行左側的 **「调值/调类 / Tone value/category」** 輸入框，並在其右側的 **「Symbol / 符号」** 輸入框中填入此聲調所 mapping 到的羅馬字符號。如需添加新的聲調及其 mapping，可點擊下方的 **「+ 添加声调行 / Add Tone Row」** 按鈕。完成以上操作，才能在工具底層建立完整的聲調數據 mapping，從而生成正確的羅馬字拼寫。
+
+在正確位置填入聲母、韻母所 mapping 到的羅馬字符號，並填寫好從原始數據提取解析的聲調數據及其 mapping 到的聲調羅馬字符號後，主表最右側的 **Syllable/Combination** 一列便會顯示每個音節的羅馬字拼寫，如下圖所示。聲調的羅馬字符號標在聲母與韻母之後，這一位置目前無法更改。
+
+The tones extracted and parsed from the raw data, together with the romanized symbols to which they are mapped, are entered in the **"全局声调设置 / Global Tone Settings"** area at the bottom of the organizer's left panel. For each tone listed in the "韵母 数据 / Data for Final" column, the user enters the raw tone value into the **"调值/调类 / Tone value/category"** field on the left side of a **"声调 / Tone:"** row, and enters the romanized symbol to which that tone is mapped in the **"Symbol / 符号"** field to its right. To add further tones and their mappings, click the **"+ 添加声调行 / Add Tone Row"** button below. Only after these steps are completed is the underlying tone mapping fully established, allowing correct romanized spellings to be generated.
+
+Once the romanized symbols for the initials and finals have been entered in the appropriate fields, and the tones extracted from the raw data together with their mapped romanized tone symbols have been filled in, the **Syllable/Combination** column on the far right of the main table displays the romanized spelling of each syllable, as shown below. The romanized tone symbol is placed after the initial and final; this position currently cannot be changed.
+
+<img src="./assets/phonconvert_romdata_org.png" width="720" alt="PhonConvert organizer with romanization mappings filled in and syllables generated">
+
+**「全局声调设置 / Global Tone Settings」** 設置的是當前語言／方言的全部聲調，不受所選韻母 tab 的影響。此區域下方的 **「声调 Note / Tone Note:」** 區域可供使用者填寫任何關於聲調及其 mapping 信息的備注；此輸入框針對整體所有聲調，每個聲調沒有自己獨立的備注填寫區域。
+
+The **"全局声调设置 / Global Tone Settings"** area defines all tones of the current language or variety and is not affected by the selected final tab. The **"声调 Note / Tone Note:"** field below this area can be used to record any notes concerning the tones and their mappings; this field applies to the tones as a whole, and no separate note field is provided for each individual tone.
